@@ -14,7 +14,7 @@ namespace UserRegistrationTest
         [TestMethod]
         public void TestMethod1()
         {
-            var result = program.UserRegister("Neha");
+            var result = program.UserRegister("Jagtap");
             Assert.AreEqual("Valid", result);
         }
 
