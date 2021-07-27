@@ -5,14 +5,14 @@ namespace UserRegistration
 {
     public class Program
     {
-        public static string Regex_Email = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)*[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+        public static string Regex_MobileNumber = "^[0-9]{2}[ ][1-9]{1}[0-9]{9}$";
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to MSTest User Registration Practice Problem");
         }
-        public string UserRegister(string email)
+        public string UserRegister(string mobileNumber)
         {
-            if (Regex.IsMatch(email, Regex_Email) == true)
+            if (Regex.IsMatch(mobileNumber, Regex_MobileNumber) == true)
                 return "Valid";
             else
                 return "InValid";
