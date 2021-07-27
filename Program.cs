@@ -5,7 +5,7 @@ namespace UserRegistration
 {
     public class Program
     {
-        public static string Regex_Password = "^[A-Z][A-Za-z0-9]{7,}$";
+        public static string Regex_Password = "^((?=.*[A-Z])(?=.*[0-9])(?=.{8,}))";
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to MSTest User Registration Practice Problem");
